@@ -6,7 +6,7 @@ let cart = {};
 
 // Function to update the cart count
 function updateCartCount() {
-    const cartCount = Object.keys(cart).length;
+    const cartCount = Object.values(cart).reduce((acc, item) => acc + item.quantity, 0);
     cartCountElement.textContent = cartCount;
 }
 
