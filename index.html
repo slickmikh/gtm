@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Fan Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Tag Manager Should Go Here -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) should go here-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Liverpool Fan Shop!</h1>
+        <p>Browse our collection of products.</p>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b4e36fa3-7a09-463d-ba35-0aff51968a97/LFC+M+NK+DF+JSY+SS+STAD+HM.png" alt="Rat Painting">
+                    <h3>Liverpool Jersey</h3>
+                    <p>$100</p>
+                    <button onclick="addToCart('Liverpool Jersey', 100)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.stockx.com/images/Nike-Air-Max-95-OG-Liverpool-FC.jpg?fit=fill&bg=FFFFFF&w=690&h=520&q=57&dpr=2&trim=color&updated_at=1743706052" alt="Liverpool Air Max Shoes">
+                    <h3>Nike Air Max - Liverpool Shoes</h3>
+                    <p>$150</p>
+                    <button onclick="addToCart('Nike Air Max - Liverpool Shoes', 150)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
